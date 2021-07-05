@@ -1,5 +1,6 @@
 var goodShip,goodShipImg;
 var villianShip,villianShipImg;
+var villianShip1,villianShipImg01
 var backGroundImg;
 var bulletImg,bullet;
 var count = 0;
@@ -10,15 +11,25 @@ function preload(){
 
     goodShipImg = loadImage("images/goodShip.png");    
 villianShipImg = loadImage("images/villianShip.png");
-villianShipImg1 = loadImage("images/villianShip.png");
-villianShipImg2 = loadImage("images/villianShip.png");
-villianShipImg3 = loadImage("images/villianShip.png");
-villianShipImg4 = loadImage("images/villianShip.png");
-villianShipImg5 = loadImage("images/villianShip.png");
-villianShipImg6 = loadImage("images/villianShip.png");
-villianShipImg7 = loadImage("images/villianShip.png");
-villianShipImg8 = loadImage("images/villianShip.png");
-villianShipImg9 = loadImage("images/villianShip.png");
+villianShipImg01 = loadImage("images/villianShip.png");
+villianShipImg02 = loadImage("images/villianShip.png");
+villianShipImg03 = loadImage("images/villianShip.png");
+villianShipImg04 = loadImage("images/villianShip.png");
+villianShipImg05 = loadImage("images/villianShip.png");
+villianShipImg06 = loadImage("images/villianShip.png");
+villianShipImg07 = loadImage("images/villianShip.png");
+villianShipImg08 = loadImage("images/villianShip.png");
+villianShipImg09 = loadImage("images/villianShip.png");
+villianShipImg1 = loadImage("images/villianShip1.png")
+villianShipImg11 = loadImage("images/villianShip1.png")
+villianShipImg12 = loadImage("images/villianShip1.png")
+villianShipImg13 = loadImage("images/villianShip1.png")
+villianShipImg14 = loadImage("images/villianShip1.png")
+villianShipImg15 = loadImage("images/villianShip1.png")
+villianShipImg16 = loadImage("images/villianShip1.png")
+villianShipImg17 = loadImage("images/villianShip1.png")
+villianShipImg18 = loadImage("images/villianShip1.png")
+villianShipImg19 = loadImage("images/villianShip1.png")
 backGroundImg = loadImage("images/spaceBg.jpeg")
 bulletImg = loadImage("images/laserBlast.png")
 villianBulletImg = loadImage("images/laserBlast.png")
@@ -32,37 +43,37 @@ goodShip.addImage(goodShipImg);
 goodShip.scale = 0.2;
 
 villianShip = createSprite(1050,70,50,50);
-villianShip1 = createSprite(1050,125,50,50);
-villianShip2 = createSprite(1050,180,50,50);
-villianShip3 = createSprite(1050,235,50,50);
-villianShip4 = createSprite(1050,290,50,50);
-villianShip5 = createSprite(1050,345,50,50);
-villianShip6 = createSprite(1050,400,50,50);
-villianShip7 = createSprite(1050,455,50,50);
-villianShip8 = createSprite(1050,510,50,50);
-villianShip9 = createSprite(1050,565,50,50);
+villianShip01 = createSprite(1050,125,50,50);
+villianShip02 = createSprite(1050,180,50,50);
+villianShip03 = createSprite(1050,235,50,50);
+villianShip04 = createSprite(1050,290,50,50);
+villianShip05 = createSprite(1050,345,50,50);
+villianShip06 = createSprite(1050,400,50,50);
+villianShip07 = createSprite(1050,455,50,50);
+villianShip08 = createSprite(1050,510,50,50);
+villianShip09 = createSprite(1050,565,50,50);
 
 villianShip.addImage(villianShipImg);
-villianShip1.addImage(villianShipImg1);
-villianShip2.addImage(villianShipImg2);
-villianShip3.addImage(villianShipImg3);
-villianShip4.addImage(villianShipImg4);
-villianShip5.addImage(villianShipImg5);
-villianShip6.addImage(villianShipImg6);
-villianShip7.addImage(villianShipImg7);
-villianShip8.addImage(villianShipImg8);
-villianShip9.addImage(villianShipImg9);
+villianShip01.addImage(villianShipImg01);
+villianShip02.addImage(villianShipImg02);
+villianShip03.addImage(villianShipImg03);
+villianShip04.addImage(villianShipImg04);
+villianShip05.addImage(villianShipImg05);
+villianShip06.addImage(villianShipImg06);
+villianShip07.addImage(villianShipImg07);
+villianShip08.addImage(villianShipImg08);
+villianShip09.addImage(villianShipImg09);
 
 villianShip.scale = 0.2;
-villianShip1.scale = 0.2;
-villianShip2.scale = 0.2;
-villianShip3.scale = 0.2;
-villianShip4.scale = 0.2;
-villianShip5.scale = 0.2;
-villianShip6.scale = 0.2;
-villianShip7.scale = 0.2;
-villianShip8.scale = 0.2;
-villianShip9.scale = 0.2;
+villianShip01.scale = 0.2;
+villianShip02.scale = 0.2;
+villianShip03.scale = 0.2;
+villianShip04.scale = 0.2;
+villianShip05.scale = 0.2;
+villianShip06.scale = 0.2;
+villianShip07.scale = 0.2;
+villianShip08.scale = 0.2;
+villianShip09.scale = 0.2;
 
 bulletGroup = new Group();
 villianBulletGroup = new Group();
@@ -101,72 +112,72 @@ function draw(){
              console.log(count);
        } 
 
-       if(bulletGroup.isTouching(villianShip1)){
-        villianShip1.destroy();
+       if(bulletGroup.isTouching(villianShip01)){
+        villianShip01.destroy();
         count = count+1
         console.log(count);
 
 
   }
 
-  if(bulletGroup.isTouching(villianShip2)){
-    villianShip2.destroy();
+  if(bulletGroup.isTouching(villianShip02)){
+    villianShip02.destroy();
     count = count+1
     console.log(count);
 
 
 }
 
-if(bulletGroup.isTouching(villianShip3)){
-    villianShip3.destroy();
+if(bulletGroup.isTouching(villianShip03)){
+    villianShip03.destroy();
     count = count+1
     console.log(count);
 
 
 }
 
-if(bulletGroup.isTouching(villianShip4)){
-    villianShip4.destroy();
+if(bulletGroup.isTouching(villianShip04)){
+    villianShip04.destroy();
     count = count+1
     console.log(count);
 
 
 }
 
-if(bulletGroup.isTouching(villianShip5)){
-    villianShip5.destroy();
+if(bulletGroup.isTouching(villianShip05)){
+    villianShip05.destroy();
     count = count+1
     console.log(count);
 
 
 }
 
-if(bulletGroup.isTouching(villianShip6)){
-    villianShip6.destroy();
+if(bulletGroup.isTouching(villianShip06)){
+    villianShip06.destroy();
     count = count+1
     console.log(count);
 
 
 }
 
-if(bulletGroup.isTouching(villianShip7)){
-    villianShip7.destroy();
+if(bulletGroup.isTouching(villianShip07)){
+    villianShip07.destroy();
     count = count+1
     console.log(count);
 
 
 }
 
-if(bulletGroup.isTouching(villianShip8)){
-    villianShip8.destroy();
+if(bulletGroup.isTouching(villianShip08)){
+    villianShip08.destroy();
     count = count+1
     console.log(count);
 
 
 }
 
-if(bulletGroup.isTouching(villianShip9)){
-    villianShip9.destroy();
+if(bulletGroup.isTouching(villianShip09)){
+    villianShip09.destroy();
     count = count+1
     console.log(count);
 
@@ -190,11 +201,25 @@ if(bulletGroup.isTouching(villianShip9)){
      villianBullets();
      drawSprites();
 
-
-  if(count >= 10){
+if(gameState==="end"){
+  if(count => 10){
     textSize(40);
     fill ("green")
     text("LEVEL 1 COMPLETED",350,325);
+    goodShip.destroy();
+    villianShip.destroy();
+    villianShip01.destroy();
+    villianShip02.destroy();
+    villianShip03.destroy();
+    villianShip04.destroy();
+    villianShip05.destroy();
+    villianShip06.destroy();
+    villianShip07.destroy();
+    villianShip08.destroy();
+    villianShip09.destroy();
+    bulletGroup.destroy();
+    villianBulletGroup.destroy();
+
     }
 
 
@@ -202,23 +227,26 @@ if(bulletGroup.isTouching(villianShip9)){
 }
 
      if(gameState==="end"){
+     if(villianBullet.isTouching(goodShip)){  
      textSize(40)
      fill ("red")
      text("YOU LOSE",550,325);
      goodShip.destroy();
      villianShip.destroy();
-     villianShip1.destroy();
-     villianShip2.destroy();
-     villianShip3.destroy();
-     villianShip4.destroy();
-     villianShip5.destroy();
-     villianShip6.destroy();
-     villianShip7.destroy();
-     villianShip8.destroy();
-     villianShip9.destroy();
-     bulletGroup.destroyEach();
-     villianBulletGroup.destroyEach();
+     villianShip01.destroy();
+     villianShip02.destroy();
+     villianShip03.destroy();
+     villianShip04.destroy();
+     villianShip05.destroy();
+     villianShip06.destroy();
+     villianShip07.destroy();
+     villianShip08.destroy();
+     villianShip09.destroy();
+     bulletGroup.destroy();
+     villianBulletGroup.destroy();
+     }
     }
+}
 
 
 function bullets(){
